@@ -1,0 +1,145 @@
+/**************************************
+			COLOR SCHEMER
+**************************************/
+/*245 218 5*/
+/**************************************
+			FONT 
+**************************************/
+@font-face{
+	font-family: myFont1;
+	src: url('..//res/BebasNeue.otf');
+}
+@font-face{
+	font-family: myFont2;
+	src: url('..//res/steelfish rg.otf');
+}
+/**************************************
+				MAIN 
+**************************************/
+body{
+	background: linear-gradient(#F50521, #F56105);
+	background-size:1500px 1000px;
+	#main_wrapper{
+		background-color: #fff;
+		background-image: url('../res/texture.png');
+	    width:900px;
+	    height:700px;
+	    border-style:double;
+	    border-color: #000;
+	    overflow:hidden;
+		position: absolute;
+		top:10px;
+	    left: 50%;
+	    margin-left: -450px;
+	    #header_pics{
+	    	background-color: black;
+	    	background-image: url("../res/pegler_pop_2010_2.jpg");
+	    	background-size: 80%;
+	    	background-position: right;
+	    	#headerImg1{
+	    		border-bottom: 1px double black;
+		    	width:25%;
+		    	margin-left:5%;
+	    	}	    	
+	    }
+	    #menu{
+	    	top:260px;
+	    	width:900px;
+	    	height:75px;
+	    	display: inline-block;
+	    	/**************************************
+			NAV BAR
+			**************************************/
+			nav ul {
+				position:relative;
+				margin-top:10px;
+				border-collapse: collapse;
+				margin-left:80px;
+				font: 35px myFont1;
+				line-height: 35px;
+				list-style: none;
+				display: inline-table;
+				li {
+					float: left;
+					a {
+					 	text-align:center;
+					 	width:180px;
+					 	background: linear-gradient(#F50521, #F56105);
+						box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+					 	border-radius: 10px;
+					 	border:2px double white;
+						display: block; 
+						padding: 10px 10px;
+						color: #fff; 
+						text-decoration: none;
+						margin: 0 60px 0 0;
+						cursor:pointer;
+					}
+					.active{
+						text-decoration: underline;
+						background: linear-gradient(#E62E00, #FF9900);
+					}
+				}
+				li:hover {
+					text-decoration: underline;
+					font-weight:125%;
+				}
+				li:hover a {
+					color: #fff;
+				}
+			}
+	    }
+    	/**************************************
+					SOCAIL MEDIA
+		**************************************/
+		.social-media{
+			position:relative;
+			left:47%;
+			cursor: pointer;
+		}
+    	/**************************************
+						TITLE
+		**************************************/
+		#slide_title{
+			/*position:absolute;*/
+			width:900px;
+			font:80px myFont1;
+			top:340px;
+			color:#F50521;
+			text-align:center;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+		/**************************************
+						ARROW PICS
+		**************************************/
+		.arrow{
+			position:absolute;
+			width:225px;
+			top:330px;
+		}
+		#arrow_right{
+			left:625px;
+		}
+		#arrow_left{
+			left:50px;
+		}
+	}
+}
+/**************************************
+			SWIPER
+**************************************/
+.swiper-container{
+	font: 25px myFont2;
+/*	position:absolute;
+	top:410px;
+*/	overflow:hidden;
+	width:800px;
+	height:240px;
+	left:10px;
+	.swiper-slide{
+	    position:relative;
+	    overflow:hidden;
+	    width:800px;
+	    height:285px;
+	}
+}
